@@ -29,7 +29,6 @@ public class Bookscontroller {
 	@ModelAttribute
 	public BooksForm setUpForm() {
 		BooksForm form = new BooksForm();
-		form.setPublication_year(0);
 		return form;
 	}
 	
@@ -66,7 +65,7 @@ public class Bookscontroller {
 			return "redirect:/books";
 		} else {
 			/* エラーがある場合は、一覧表示処理を呼ぶ */
-			return ShowList(booksForm, model);
+			return "add";
 		}
 	}
 	
@@ -107,7 +106,7 @@ public class Bookscontroller {
     		return "redirect:/books";
 		} else {
 			makeUpdateModel(booksForm, model);
-			return "show";
+			return "add";
         }
 	}
 	

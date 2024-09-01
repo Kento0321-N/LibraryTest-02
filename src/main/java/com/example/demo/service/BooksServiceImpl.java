@@ -48,5 +48,4 @@ public class BooksServiceImpl implements BooksService{
 	public void DeletebooksById(String isbn_code) { 
 		booksrepository.deleteById(isbn_code);
 	}
-	
 }

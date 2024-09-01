@@ -9,7 +9,7 @@ public class Topcontroller {
 	
     @RequestMapping("/")
     public String index(Model model) {
-        model.addAttribute("message", "トップ画面！");
+        model.addAttribute("message", "トップ画面");
         return "top";
     }
 

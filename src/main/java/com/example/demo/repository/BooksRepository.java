@@ -26,6 +26,5 @@ public interface  BooksRepository extends CrudRepository<Books, String> {
 		       @Param("author") String author,
 		       @Param("publication_year") Integer publication_year,
 		       @Param("publisher") String publisher);
-	
 }
 

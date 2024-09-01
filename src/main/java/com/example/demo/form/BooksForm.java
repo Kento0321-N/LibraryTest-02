@@ -10,22 +10,22 @@ import lombok.Data;
 public class BooksForm {
 	/* 入力チェック */
 	
-	@NotBlank
-	@Length(min=13, max=13)
+	@NotBlank(message = "{NotBlank.message}")
+	@Length(min=13, max=13, message = "{isbn.Length.message}")
 	private String isbn_code;
 
-	@NotBlank
-	@Length(min=1, max=150) 
+	@NotBlank(message = "{NotBlank.message}")
+	@Length(min=1, max=150, message = "{Length.message}")
 	private String book_title;
 	
-	@NotBlank
-	@Length(min=1, max=60) 
+	@NotBlank(message = "{NotBlank.message}")
+	@Length(min=1, max=60, message = "{Length.message}")
 	private String author;
 	
-	@NotNull
+	@NotNull(message = "{NotNull.message}")
 	private Integer publication_year;
 	
-	@NotBlank
+	@NotBlank(message = "{NotBlank.message}")
 	private String publisher;
 	
 	/* 「登録」か「更新」判定用 */
