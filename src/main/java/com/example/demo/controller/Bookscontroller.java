@@ -65,6 +65,7 @@ public class Bookscontroller {
 			return "redirect:/books";
 		} else {
 			/* エラーがある場合は登録画面にエラーを表示させる */
+			booksForm.setNewBooks(true);
 			return "add";
 		}
 	}
