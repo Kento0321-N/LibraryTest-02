@@ -64,7 +64,7 @@ public class Bookscontroller {
 			service.InsertBooks(books);
 			return "redirect:/books";
 		} else {
-			/* エラーがある場合は、一覧表示処理を呼ぶ */
+			/* エラーがある場合は登録画面にエラーを表示させる */
 			return "add";
 		}
 	}
@@ -106,6 +106,7 @@ public class Bookscontroller {
     		return "redirect:/books";
 		} else {
 			makeUpdateModel(booksForm, model);
+			/* エラーがある場合は更新画面にエラーを表示させる */
 			return "add";
         }
 	}

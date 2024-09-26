@@ -11,9 +11,9 @@ public class BooksForm {
 	/* 入力チェック */
 	
 	@NotBlank(message = "{NotBlank.message}")
-	@Length(min=13, max=13, message = "{isbn.Length.message}")
+	@Length(min= 13, max=13, message = "{isbn.Length.message}")
 	private String isbn_code;
-
+		
 	@NotBlank(message = "{NotBlank.message}")
 	@Length(min=1, max=150, message = "{Length.message}")
 	private String book_title;
@@ -26,6 +26,7 @@ public class BooksForm {
 	private Integer publication_year;
 	
 	@NotBlank(message = "{NotBlank.message}")
+	@Length(min=1, max=30, message = "{Length.message}")
 	private String publisher;
 	
 	/* 「登録」か「更新」判定用 */

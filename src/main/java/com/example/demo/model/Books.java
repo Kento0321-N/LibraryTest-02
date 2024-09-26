@@ -10,6 +10,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+	//当クラスはDB内のテーブル1行に対応するクラス(=Entityの役割)
 
 @Data               // Getter,Setterが不要になる
 @NoArgsConstructor  // デフォルトコンストラクターの自動生成
