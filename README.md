@@ -6,13 +6,13 @@
 　HTML、CSS
 
 #### 　〇バックエンド言語
-　Java17
+　Java 17
 
 #### 　〇バックエンドフレームワーク
-　SpringBoot3.3.0
+　SpringBoot 3.3.0
 
 #### 　〇DB
-　MySQL8.0.34
+　MySQL 8.0.34
 
 
 　
