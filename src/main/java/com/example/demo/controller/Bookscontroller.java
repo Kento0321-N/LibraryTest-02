@@ -40,7 +40,7 @@ public class Bookscontroller {
 		return "show";
 	}
 	
-	/* 登録用画面の表示 */
+	/* 登録画面の表示 */
 	@GetMapping("/add")
 	public String ShowInsert(BooksForm booksForm) {
 		booksForm.setNewBooks(true); 
@@ -70,7 +70,7 @@ public class Bookscontroller {
 		}
 	}
 	
-    /* 更新用画面の表示 */
+    /* 更新画面の表示 */
 	@GetMapping("/{isbn_code}")
 	public String ShowUpdate(BooksForm booksForm, @PathVariable String isbn_code, Model model) {
 		/* 表示する行を取得 */
