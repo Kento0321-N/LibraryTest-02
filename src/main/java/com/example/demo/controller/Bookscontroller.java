@@ -120,7 +120,7 @@ public class Bookscontroller {
 	}
 	
 	/**
-	 * makeQuizFormはquiz(エンティティクラス(DB関連クラス))からQuizForm(Formクラス)へ
+	 * makeBooksFormはBooks(エンティティクラス(DB関連クラス))からBooksForm(Formクラス)へ
 	 * 値を代入しformを返している。
 	 */
 	private BooksForm makeBooksForm(Books books) {
