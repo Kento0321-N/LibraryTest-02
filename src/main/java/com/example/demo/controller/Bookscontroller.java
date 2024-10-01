@@ -32,7 +32,7 @@ public class Bookscontroller {
 		return form;
 	}
 	
-	/* 一覧表示 */
+	/* 一覧画面表示 */
 	@GetMapping
 	public String ShowList(BooksForm booksForm, Model model) {
 		Iterable<Books> books = service.SelectAll(); // データ全件取得
@@ -64,7 +64,7 @@ public class Bookscontroller {
 			service.InsertBooks(books);
 			return "redirect:/books";
 		} else {
-			/* エラーがある場合は登録画面にエラーを表示させる */
+			/* エラーがある場合は登録画面にエラーを表示 */
 			booksForm.setNewBooks(true);
 			return "add";
 		}
@@ -85,7 +85,7 @@ public class Bookscontroller {
 		return "add";
 	}
 	
-	/* 更新用のModelを作成する */
+	/* 更新用のModelを作成 */
 	private void makeUpdateModel(BooksForm booksForm, Model model) {
 		model.addAttribute("isbn_code", booksForm.getIsbn_code());
 		booksForm.setNewBooks(false);
@@ -120,7 +120,7 @@ public class Bookscontroller {
 	}
 	
 	/**
-	 * makeBooksFormはBooks(エンティティクラス(DB関連クラス))からBooksForm(Formクラス)へ
+	 * makeBooksFormはBooks(Entityクラス(DB関連クラス))からBooksForm(Formクラス)へ
 	 * 値を代入しformを返している。
 	 */
 	private BooksForm makeBooksForm(Books books) {

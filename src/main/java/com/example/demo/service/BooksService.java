@@ -11,12 +11,12 @@ public interface BooksService {
 	
 	Optional<Books> SelectOneById(String isbn_code);
 	
-	/* 取得したデータをDBにInsertする */
+	/* 取得したデータを基に『書籍DB』に登録 */
     void InsertBooks(Books books);
     
-    /* データを更新する */
+    /* 取得したデータを基に『書籍DB』を更新 */
     void UpdateBooks(Books books);
     
-    /* データを削除する */
+    /* 取得したデータを基に『書籍DB』から削除 */
     void DeletebooksById(String isbn_code);
 }
